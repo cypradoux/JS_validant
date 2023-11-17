@@ -1,3 +1,4 @@
+export function exo6() {
 const arn = prompt("Quel est l'ARN à traduire ?");
     const codons = arn.match(/.{1,3}/g);
     const proteins = codons.map(codon => {
@@ -36,3 +37,5 @@ const arn = prompt("Quel est l'ARN à traduire ?");
     });
 
 console.log(proteins)
+
+}

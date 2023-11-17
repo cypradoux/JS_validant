@@ -1,3 +1,4 @@
+export function exo5() {
 const books = [
     { title: 'Gatsby le magnifique', id: 133712, rented: 39 },
     { title: 'A la recherche du temps,perdu', id: 237634, rented: 28 },
@@ -80,3 +81,4 @@ const booksSort = newBooks.sort((a, b) => {
 
 console.log(booksSort)
 
+}

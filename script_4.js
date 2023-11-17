@@ -1,3 +1,4 @@
+export function exo4() {
 const entrepreneurs = [
     { first: 'Steve', last: 'Jobs', year: 1955 },
     { first: 'Oprah', last: 'Winfrey', year: 1954 },
@@ -21,8 +22,7 @@ const entrepreneurs = [
 
 
 // trier ordre alphabétique nom de famille
-const yearRecherche = 1970;
-const entrepreneursFiltres = entrepreneurs.filter(entrepreneur => entrepreneur.year === yearRecherche);
+const entrepreneursFiltres = entrepreneurs.filter(entrepreneur => entrepreneur.year >= 1970 && entrepreneur.year <= 1980);
 console.log(entrepreneursFiltres);
 
 // sortir array avec noms et prénoms (sans year quoi)
@@ -49,3 +49,5 @@ const entrepreneursSort = entrepreneurs.sort((a, b) => {
     return 0;
 });
 console.log(entrepreneursSort)
+
+}
